@@ -32,16 +32,16 @@ export default function Histoire() {
 
               {/* App B2C — haut droite */}
               <figure className="absolute top-[1%] right-[1%] z-[3] m-0 w-[24%]" style={{ transform: "rotate(5deg)", filter: "drop-shadow(0 10px 20px rgba(40,25,10,0.18))" }}>
-                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white shadow-md" style={{ aspectRatio: "9/19" }}>
-                  <Image src="/work-b2c-app.png" alt="App B2C" fill className="object-cover" sizes="160px" />
+                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white p-1 shadow-md" style={{ aspectRatio: "9/19" }}>
+                  <Image src="/work-b2c-app.png" alt="App B2C" fill className="rounded-xl object-cover" sizes="160px" />
                 </div>
                 <figcaption className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-ink px-[9px] py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-white" style={{ transform: "translateX(-50%) rotate(-5deg)" }}>App B2C</figcaption>
               </figure>
 
               {/* App B2B — haut gauche */}
               <figure className="absolute top-[5%] left-[-2%] z-[3] m-0 w-[36%]" style={{ transform: "rotate(-4deg)", filter: "drop-shadow(0 10px 20px rgba(40,25,10,0.18))" }}>
-                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white shadow-md" style={{ aspectRatio: "16/9" }}>
-                  <Image src="/work-b2b-app.png" alt="App B2B" fill className="object-cover" sizes="220px" />
+                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white p-1 shadow-md" style={{ aspectRatio: "16/9" }}>
+                  <Image src="/work-b2b-app.png" alt="App B2B" fill className="rounded-xl object-cover" sizes="220px" />
                 </div>
                 <figcaption className="absolute -top-3 left-2.5 whitespace-nowrap rounded-full bg-ink px-[9px] py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-white" style={{ transform: "rotate(4deg)" }}>App B2B</figcaption>
               </figure>
