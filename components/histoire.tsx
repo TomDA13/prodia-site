@@ -31,33 +31,33 @@ export default function Histoire() {
               </div>
 
               {/* App B2C — haut droite */}
-              <figure className="absolute top-[1%] right-[1%] z-[3] m-0 w-[24%]" style={{ transform: "rotate(5deg)", filter: "drop-shadow(0 14px 26px rgba(40,25,10,0.20))" }}>
-                <div className="overflow-hidden rounded-xl border border-border bg-white" style={{ aspectRatio: "9/19" }}>
+              <figure className="absolute top-[1%] right-[1%] z-[3] m-0 w-[24%]" style={{ transform: "rotate(5deg)", filter: "drop-shadow(0 10px 20px rgba(40,25,10,0.18))" }}>
+                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white shadow-md" style={{ aspectRatio: "9/19" }}>
                   <Image src="/work-b2c-app.png" alt="App B2C" fill className="object-cover" sizes="160px" />
                 </div>
                 <figcaption className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-ink px-[9px] py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-white" style={{ transform: "translateX(-50%) rotate(-5deg)" }}>App B2C</figcaption>
               </figure>
 
               {/* App B2B — haut gauche */}
-              <figure className="absolute top-[5%] left-[-2%] z-[3] m-0 w-[36%]" style={{ transform: "rotate(-4deg)", filter: "drop-shadow(0 14px 26px rgba(40,25,10,0.20))" }}>
-                <div className="overflow-hidden rounded-[10px] border border-border bg-white" style={{ aspectRatio: "16/9" }}>
+              <figure className="absolute top-[5%] left-[-2%] z-[3] m-0 w-[36%]" style={{ transform: "rotate(-4deg)", filter: "drop-shadow(0 10px 20px rgba(40,25,10,0.18))" }}>
+                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white shadow-md" style={{ aspectRatio: "16/9" }}>
                   <Image src="/work-b2b-app.png" alt="App B2B" fill className="object-cover" sizes="220px" />
                 </div>
                 <figcaption className="absolute -top-3 left-2.5 whitespace-nowrap rounded-full bg-ink px-[9px] py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-white" style={{ transform: "rotate(4deg)" }}>App B2B</figcaption>
               </figure>
 
               {/* Logiciel B2B — bas droite */}
-              <figure className="absolute right-[2%] bottom-[12%] z-[3] m-0 w-[48%]" style={{ transform: "rotate(3deg)", filter: "drop-shadow(0 16px 28px rgba(40,25,10,0.22))" }}>
-                <div className="overflow-hidden rounded-[10px] border border-border bg-white" style={{ aspectRatio: "16/10" }}>
-                  <Image src="/work-b2b-saas.png" alt="Logiciel B2B" fill className="object-cover" sizes="300px" />
+              <figure className="absolute right-[2%] bottom-[12%] z-[3] m-0 w-[48%]" style={{ transform: "rotate(3deg)", filter: "drop-shadow(0 12px 24px rgba(40,25,10,0.20))" }}>
+                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white p-1 shadow-md" style={{ aspectRatio: "16/10" }}>
+                  <Image src="/work-b2b-saas.png" alt="Logiciel B2B" fill className="rounded-xl object-cover" style={{ objectPosition: "left top" }} sizes="300px" />
                 </div>
                 <figcaption className="absolute -top-3 left-3.5 whitespace-nowrap rounded-full bg-orange-500 px-[9px] py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-white" style={{ transform: "rotate(-3deg)" }}>Logiciel B2B</figcaption>
               </figure>
 
               {/* Fintech SaaS — bas gauche */}
-              <figure className="absolute bottom-[2%] left-[-1%] z-[3] m-0 w-[42%]" style={{ transform: "rotate(-3deg)", filter: "drop-shadow(0 16px 28px rgba(40,25,10,0.22))" }}>
-                <div className="overflow-hidden rounded-[10px] border border-border bg-white" style={{ aspectRatio: "16/10" }}>
-                  <Image src="/work-fintech-saas.png" alt="Fintech SaaS" fill className="object-cover" style={{ objectPosition: "left top" }} sizes="260px" />
+              <figure className="absolute bottom-[2%] left-[-1%] z-[3] m-0 w-[42%]" style={{ transform: "rotate(-3deg)", filter: "drop-shadow(0 12px 24px rgba(40,25,10,0.20))" }}>
+                <div className="overflow-hidden rounded-2xl border-2 border-white/80 bg-white p-1 shadow-md" style={{ aspectRatio: "16/10" }}>
+                  <Image src="/work-fintech-saas.png" alt="Fintech SaaS" fill className="rounded-xl object-cover" style={{ objectPosition: "left top" }} sizes="260px" />
                 </div>
                 <figcaption className="absolute -top-3 right-3.5 whitespace-nowrap rounded-full bg-ink px-[9px] py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-white" style={{ transform: "rotate(3deg)" }}>Fintech SaaS</figcaption>
               </figure>
