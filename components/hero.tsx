@@ -112,10 +112,10 @@ function HeroMockupSplit() {
         </div>
 
         {/* ============ AVANT ============ */}
-        <div>
+        <div className="flex flex-col">
           <div className="mb-2 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-text-muted md:hidden">Aujourd&apos;hui</div>
         <div
-          className="relative rounded-2xl p-4 md:p-[22px] md:pb-6 md:rotate-[-2deg]"
+          className="relative flex-1 rounded-2xl p-4 md:p-[22px] md:pb-6 md:rotate-[-2deg]"
           style={{
             background: "oklch(0.97 0.005 75)",
             border: "1.5px dashed oklch(0.78 0.01 75)",
@@ -156,10 +156,10 @@ function HeroMockupSplit() {
         </div>
 
         {/* ============ APRÈS ============ */}
-        <div>
+        <div className="flex flex-col">
           <div className="mb-2 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-orange-700 md:hidden">Après 6 semaines</div>
         <div
-          className="relative rounded-2xl bg-ink p-4 md:p-[22px] md:pb-6 text-white md:rotate-[1.5deg]"
+          className="relative flex-1 rounded-2xl bg-ink p-4 md:p-[22px] md:pb-6 text-white md:rotate-[1.5deg]"
           style={{
             boxShadow:
               "0 40px 80px -16px rgba(15,12,8,0.36), 0 20px 40px -16px rgba(15,12,8,0.24)",
