@@ -112,8 +112,10 @@ function HeroMockupSplit() {
         </div>
 
         {/* ============ AVANT ============ */}
+        <div>
+          <div className="mb-2 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-text-muted md:hidden">Aujourd&apos;hui</div>
         <div
-          className="relative rounded-2xl p-[22px] pb-6 md:rotate-[-2deg]"
+          className="relative rounded-2xl p-5 pb-5 md:p-[22px] md:pb-6 md:rotate-[-2deg]"
           style={{
             background: "oklch(0.97 0.005 75)",
             border: "1.5px dashed oklch(0.78 0.01 75)",
@@ -151,10 +153,13 @@ function HeroMockupSplit() {
             …et il est déjà 11h.
           </div>
         </div>
+        </div>
 
         {/* ============ APRÈS ============ */}
+        <div>
+          <div className="mb-2 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-orange-700 md:hidden">Après 6 semaines</div>
         <div
-          className="relative rounded-2xl bg-ink p-[22px] pb-6 text-white md:rotate-[1.5deg]"
+          className="relative rounded-2xl bg-ink p-5 pb-5 md:p-[22px] md:pb-6 text-white md:rotate-[1.5deg]"
           style={{
             boxShadow:
               "0 40px 80px -16px rgba(15,12,8,0.36), 0 20px 40px -16px rgba(15,12,8,0.24)",
@@ -219,6 +224,7 @@ function HeroMockupSplit() {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </div>
 
@@ -368,12 +374,10 @@ export default function Hero({ activeSector, setActiveSector }: HeroProps) {
           >
             <Eyebrow>AGENCE IA · POUR LES TPE/PME</Eyebrow>
 
-            <h1 className="mt-6 text-[clamp(46px,6.2vw,80px)] font-normal leading-[0.98] tracking-[-0.045em] text-ink">
-              <span className="whitespace-nowrap">
-                Une solution IA{" "}
-                <span className="font-serif italic text-orange-500">
-                  taillée
-                </span>
+            <h1 className="mt-6 text-[clamp(36px,6.2vw,80px)] font-normal leading-[0.98] tracking-[-0.045em] text-ink">
+              Une solution IA{" "}
+              <span className="font-serif italic text-orange-500">
+                taillée
               </span>
               <br />
               pour votre métier.
