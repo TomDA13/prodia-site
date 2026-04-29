@@ -65,7 +65,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-wrap justify-between gap-3 border-t pt-6 font-mono text-[11px] tracking-[0.06em] text-text-muted" style={{ borderColor: "oklch(0.85 0.005 75 / 0.5)" }}>
           <span>© 2026 Prodia · Tom Da Rold</span>
-          <span>Mentions légales · Confidentialité</span>
+          <a href="/mentions-legales" className="text-text-muted no-underline transition-colors hover:text-orange-700">Mentions légales · Confidentialité</a>
         </div>
       </div>
     </footer>
