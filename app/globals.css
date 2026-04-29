@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================
+   PRODIA — Design Tokens via Tailwind v4 @theme
+   ============================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+  --font-serif: var(--font-instrument-serif), "Georgia", serif;
+
+  /* Neutres warm */
+  --color-bg: oklch(0.985 0.003 80);
+  --color-bg-elevated: #FFFFFF;
+  --color-bg-subtle: oklch(0.97 0.004 80);
+  --color-bg-muted: oklch(0.945 0.005 75);
+
+  /* Encres */
+  --color-ink: #0A0A0B;
+  --color-ink-soft: oklch(0.25 0.005 80);
+  --color-text: oklch(0.22 0.005 80);
+  --color-text-muted: oklch(0.50 0.005 80);
+  --color-text-subtle: oklch(0.65 0.004 80);
+
+  /* Bordures */
+  --color-border: oklch(0.92 0.005 75);
+  --color-border-strong: oklch(0.85 0.005 75);
+
+  /* Orange scale */
+  --color-orange-50: oklch(0.975 0.018 45);
+  --color-orange-100: oklch(0.95 0.04 42);
+  --color-orange-200: oklch(0.90 0.08 40);
+  --color-orange-300: oklch(0.83 0.13 40);
+  --color-orange-400: oklch(0.76 0.17 40);
+  --color-orange-500: oklch(0.685 0.205 38);
+  --color-orange-600: oklch(0.62 0.20 36);
+  --color-orange-700: oklch(0.54 0.17 34);
+  --color-orange-800: oklch(0.44 0.13 32);
+  --color-orange-900: oklch(0.34 0.09 32);
+
+  /* Semantic */
+  --color-accent: oklch(0.685 0.205 38);
+  --color-accent-hover: oklch(0.62 0.20 36);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(15, 12, 8, 0.04);
+  --shadow-sm: 0 1px 2px rgba(15, 12, 8, 0.04), 0 2px 4px rgba(15, 12, 8, 0.04);
+  --shadow-md: 0 2px 4px rgba(15, 12, 8, 0.04), 0 8px 16px rgba(15, 12, 8, 0.06);
+  --shadow-lg: 0 4px 8px rgba(15, 12, 8, 0.05), 0 16px 32px rgba(15, 12, 8, 0.08);
+  --shadow-xl: 0 8px 16px rgba(15, 12, 8, 0.06), 0 32px 64px rgba(15, 12, 8, 0.10);
+  --shadow-orange: 0 8px 24px rgba(255, 92, 31, 0.25);
+  --shadow-ink: 0 8px 24px rgba(10, 10, 11, 0.18);
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-full: 999px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ============================================
+   Base resets
+   ============================================ */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
+}
+
+/* Perspective grid animation */
+@keyframes meshA {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, -40px) scale(1.15); }
+}
+@keyframes meshB {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, 50px) scale(1.10); }
+}
+@keyframes meshC {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, 30px) scale(0.92); }
+}
+@keyframes meshD {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, -50px) scale(1.12); }
+}
+@keyframes meshE {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, 40px) scale(1.08); }
+}
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }
