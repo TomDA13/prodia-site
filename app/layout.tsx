@@ -49,7 +49,7 @@ const jsonLd = {
   name: "Prodia",
   description:
     "Agence IA pour TPE & PME. Automatisez les tâches répétitives avec des agents IA sur-mesure.",
-  url: "https://prodia.io",
+  url: "https://www.prodia-lab.com",
   email: "tom.darold6@gmail.com",
   telephone: "+33627160669",
   areaServed: "FR",
@@ -81,7 +81,7 @@ export default function RootLayout({
         {children}
         <Script
           defer
-          data-domain="prodia.io"
+          data-domain="www.prodia-lab.com"
           src="https://plausible.io/js/script.js"
           strategy="afterInteractive"
         />
