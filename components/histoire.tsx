@@ -26,8 +26,8 @@ export default function Histoire() {
             {/* Visuel : portrait + mockups satellites */}
             <div className="relative mx-auto aspect-square w-full max-w-[580px]">
               {/* Portrait fondateur */}
-              <div className="absolute left-1/2 top-1/2 z-[2] w-[58%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[14px] border border-border shadow-xl" style={{ aspectRatio: "4/5" }}>
-                <Image src="/charles-portrait.jpg" alt="Fondateur Prodia" fill className="object-cover" style={{ objectPosition: "center 25%" }} sizes="(max-width: 768px) 80vw, 35vw" />
+              <div className="absolute left-1/2 top-1/2 z-[2] w-[58%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl border-2 border-white/80 shadow-xl" style={{ aspectRatio: "4/5" }}>
+                <Image src="/tom-portrait.jpg" alt="Tom Da Rold — Fondateur Prodia" fill className="object-cover" style={{ objectPosition: "center 30%" }} sizes="(max-width: 768px) 80vw, 35vw" />
               </div>
 
               {/* App B2C — haut droite */}
