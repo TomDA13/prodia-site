@@ -85,13 +85,13 @@ function HeroMockupSplit() {
   return (
     <div className="relative w-full max-w-[540px] mx-auto">
       <div
-        className="relative grid grid-cols-2 items-stretch gap-10"
+        className="relative grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-10"
         style={{ perspective: "1400px" }}
       >
         {/* === Séparateur central === */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute top-[-10px] bottom-[-10px] left-1/2 z-[4] flex w-14 -translate-x-1/2 items-center justify-center"
+          className="pointer-events-none absolute top-[-10px] bottom-[-10px] left-1/2 z-[4] hidden w-14 -translate-x-1/2 items-center justify-center md:flex"
         >
           <div
             className="absolute inset-y-0 left-1/2 -translate-x-1/2"
@@ -113,11 +113,10 @@ function HeroMockupSplit() {
 
         {/* ============ AVANT ============ */}
         <div
-          className="relative rounded-2xl p-[22px] pb-6"
+          className="relative rounded-2xl p-[22px] pb-6 md:rotate-[-2deg]"
           style={{
             background: "oklch(0.97 0.005 75)",
             border: "1.5px dashed oklch(0.78 0.01 75)",
-            transform: "rotate(-2deg)",
             boxShadow:
               "0 26px 60px -22px rgba(60,40,20,0.20), 0 10px 24px -16px rgba(60,40,20,0.10)",
           }}
@@ -155,9 +154,8 @@ function HeroMockupSplit() {
 
         {/* ============ APRÈS ============ */}
         <div
-          className="relative rounded-2xl bg-ink p-[22px] pb-6 text-white"
+          className="relative rounded-2xl bg-ink p-[22px] pb-6 text-white md:rotate-[1.5deg]"
           style={{
-            transform: "rotate(1.5deg)",
             boxShadow:
               "0 40px 80px -16px rgba(15,12,8,0.36), 0 20px 40px -16px rgba(15,12,8,0.24)",
           }}
@@ -225,7 +223,7 @@ function HeroMockupSplit() {
       </div>
 
       {/* Légende */}
-      <div className="mt-[18px] grid grid-cols-2 gap-10">
+      <div className="mt-[18px] hidden grid-cols-2 gap-10 md:grid">
         <div className="text-center font-mono text-[10px] uppercase tracking-[0.18em] text-text-muted">
           Aujourd&apos;hui
         </div>
@@ -426,7 +424,7 @@ export default function Hero({ activeSector, setActiveSector }: HeroProps) {
 
           {/* Colonne droite : mockup */}
           <motion.div
-            className="flex justify-center overflow-hidden max-lg:mt-0 min-w-0"
+            className="flex justify-center max-lg:mt-0 min-w-0"
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{

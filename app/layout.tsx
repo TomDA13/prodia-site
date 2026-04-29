@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Instrument_Serif } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -39,6 +40,25 @@ export const metadata: Metadata = {
     locale: "fr_FR",
   },
   twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Prodia",
+  description:
+    "Agence IA pour TPE & PME. Automatisez les tâches répétitives avec des agents IA sur-mesure.",
+  url: "https://prodia.io",
+  email: "tom.darold6@gmail.com",
+  telephone: "+33627160669",
+  areaServed: "FR",
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "Provence-Alpes-Côte d'Azur",
+    addressCountry: "FR",
+  },
+  sameAs: ["https://www.linkedin.com/in/tom-da-rold-20177b1b9/"],
 };
 
 export default function RootLayout({
@@ -51,7 +71,21 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable}`}
     >
-      <body>{children}</body>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body>
+        {children}
+        <Script
+          defer
+          data-domain="prodia.io"
+          src="https://plausible.io/js/script.js"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
