@@ -374,11 +374,8 @@ export default function Hero({ activeSector, setActiveSector }: HeroProps) {
           >
             <Eyebrow>AGENCE IA · POUR LES TPE/PME</Eyebrow>
 
-            <h1 className="mt-6 text-[clamp(36px,6.2vw,80px)] font-normal leading-[0.98] tracking-[-0.045em] text-ink">
-              Une solution IA{" "}
-              <span className="font-serif italic text-orange-500">
-                taillée
-              </span>
+            <h1 className="mt-6 text-[clamp(36px,5.5vw,72px)] font-normal leading-[0.98] tracking-[-0.045em] text-ink">
+              Une solution IA <span className="font-serif italic text-orange-500">taillée</span>
               <br />
               pour votre métier.
             </h1>
